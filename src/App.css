@@ -1,0 +1,175 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #eaeef4;
+  min-height: 100vh;
+  font-weight: 200;
+}
+ .container {
+      min-height: 1000px;
+      padding: 20px;
+      background: linear-gradient(to bottom, #1f3cff, #f6d5f7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+
+h1 {
+  text-align: center;
+  color: #030e13;
+  margin-bottom: 25px;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.add-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #111827;
+  padding: 40px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+.add-box input {
+  padding: 25px;
+  border-radius:5px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.add-box button {
+  padding: 18px;
+  border-radius: 5px;
+  border: none;
+  background: #0e95ce;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: large;
+}
+
+.add-box button:hover {
+  background: #559ec3;
+}
+
+/* ===== WEEK CONTROLS ===== */
+.week-controls {
+  display: flex;
+  gap: 10px;
+  margin:6px 0 0;
+  font-size: 0.95rem;
+}
+
+.week-controls button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #1f2937;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.week-controls button:hover {
+  background: #374151;
+}
+
+
+.table {
+  margin-top: 20px;
+}
+
+
+.header.row {
+  display: grid;
+  grid-template-columns: 200px repeat(7, 1fr) 80px 90px;
+  gap: 20px;
+  background: #071833;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: 200px repeat(7, 1fr) 80px 90px;
+  gap: 12px;
+  align-items: center;
+ background: #09093d;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+
+  transition: 0.2s;
+}
+
+.row:hover {
+  background: #16213b;
+}
+
+.habit-name {
+  font-weight: 550;
+  padding-left: 2px;
+  font-size:20px
+  
+}
+
+.row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.streak {
+  font-size: 18px;
+  font-weight: bold;
+  color: #a9811c;
+}
+
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 30px;
+  color: #f0f2f6;
+  font-weight :bold;
+}
+
+
+@media (max-width: 768px) {
+  .header.row,
+  .row {
+    grid-template-columns: 100px repeat(7, 1fr) 60px 70px;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
